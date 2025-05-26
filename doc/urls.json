@@ -1,0 +1,26 @@
+/
+[{
+"name": "cihaz1",
+"raw_value": "A 100 KG",
+"clean_value": "100",
+"parsed_value": "1.000.000"
+},
+{
+"name": "cihaz2",
+"raw_value": "A 150 KG",
+"clean_value": "100",
+"parsed_value": "1.000.000"
+}
+}
+
+/cihaz1/
+{
+"name": "cihaz1",
+"raw_value": "A 100 KG",
+"clean_value": "100",
+"parsed_value": "1.000.000"
+}
+
+/cihaz1/text
+100
+

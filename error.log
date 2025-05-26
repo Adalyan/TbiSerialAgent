@@ -1,0 +1,638 @@
+2021-12-19 16:16:59,476 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:16:59] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:20:40,752 - INFO - werkzeug - 127.0.0.1 - - [19/Dec/2021 16:20:40] "[31m[1mGET /ports/COM3/ HTTP/1.1[0m" 405 -
+2021-12-19 16:20:42,153 - INFO - werkzeug - 127.0.0.1 - - [19/Dec/2021 16:20:42] "[31m[1mGET /ports/COM3/ HTTP/1.1[0m" 405 -
+2021-12-19 16:20:50,892 - INFO - werkzeug - 127.0.0.1 - - [19/Dec/2021 16:20:50] "[31m[1mGET /ports/COM3/ HTTP/1.1[0m" 405 -
+2021-12-19 16:20:51,680 - INFO - werkzeug - 127.0.0.1 - - [19/Dec/2021 16:20:51] "[31m[1mGET /ports/COM3/ HTTP/1.1[0m" 405 -
+2021-12-19 16:20:59,981 - INFO - werkzeug - 127.0.0.1 - - [19/Dec/2021 16:20:59] "GET /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:21:30,520 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:21:30] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:21:37,302 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:21:37] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:22:34,416 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:22:34] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:24:21,889 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:24:21] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:25:30,065 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:25:30] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:28:03,428 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:28:03] "POST /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:39:26,603 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:39:26] "GET /ports/COM3/ HTTP/1.1" 200 -
+2021-12-19 16:45:11,499 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:45:11] "GET /ports/COM3/?callback=jQuery2210383358065029629_1639921507395&_=1639921507396 HTTP/1.1" 200 -
+2021-12-19 16:45:37,919 - INFO - werkzeug - 10.101.32.236 - - [19/Dec/2021 16:45:37] "GET /ports/COM3/ HTTP/1.1" 200 -
+2021-12-21 14:38:24,773 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:38:24] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-21 14:39:01,758 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:01] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:06,888 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:39:06,912 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:06] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:39:11,039 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 82, in read_data
+    ser = serial.Serial(prt, baudrate=9600, timeout=0, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com4': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-21 14:39:11,055 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:11] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:39:13,939 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:13] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:16,091 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:16] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:23,368 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:23] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:28,893 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:39:28,901 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:28] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:39:35,966 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 82, in read_data
+    ser = serial.Serial(prt, baudrate=9600, timeout=0, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com4': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-21 14:39:35,974 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:35] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:39:40,991 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:40] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:41,103 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:39:41,103 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:41] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:39:45,720 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:45] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:39:58,596 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:39:58] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:07,181 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:07] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:12,570 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:40:12,570 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:12] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:40:24,906 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 82, in read_data
+    ser = serial.Serial(prt, baudrate=9600, timeout=0, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com4': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-21 14:40:24,914 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:24] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:40:34,504 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:34] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:37,039 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:37] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:37,855 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:37] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:38,482 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:38] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:39,056 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:39] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:43,608 - ERROR - app - Exception on /ports/com4/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 82, in read_data
+    ser = serial.Serial(prt, baudrate=9600, timeout=0, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'com4': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-21 14:40:43,608 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:43] "[35m[1mGET /ports/com4/ HTTP/1.1[0m" 500 -
+2021-12-21 14:40:44,948 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:44] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:40:56,455 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:40:56] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:03,701 - ERROR - app - Exception on /ports/com5/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:41:03,709 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:03] "[35m[1mGET /ports/com5/ HTTP/1.1[0m" 500 -
+2021-12-21 14:41:09,466 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:09] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:11,835 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:11] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:19,404 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:19] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:21,810 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:21] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:23,068 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:23] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:29,377 - ERROR - app - Exception on /ports/com6/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:41:29,377 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:29] "[35m[1mGET /ports/com6/ HTTP/1.1[0m" 500 -
+2021-12-21 14:41:30,313 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:30] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:31,106 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:31] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:31,468 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:31] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:32,230 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:32] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:41:55,625 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:41:55] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:43:06,019 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:43:06] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:43:59,425 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:43:59] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:45:05,027 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:05] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:45:07,743 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:07] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:45:22,935 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:22] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:45:27,660 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:27] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:45:34,218 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:34] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:45:54,400 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:54] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:45:57,456 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:45:57] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:46:02,719 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:46:02] "GET /ports/ HTTP/1.1" 200 -
+2021-12-21 14:46:05,837 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:46:05] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:46:09,634 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:46:09] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:47:20,576 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:47:20] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:47:24,629 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:47:24] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:47:39,638 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:47:39] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-21 14:48:48,380 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:48:48] "[32mGET /ports/COM6 HTTP/1.1[0m" 308 -
+2021-12-21 14:48:49,802 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:48:49] "GET /ports/COM6/ HTTP/1.1" 200 -
+2021-12-21 14:57:09,379 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:57:09] "GET /ports/COM6/ HTTP/1.1" 200 -
+2021-12-21 14:58:01,765 - ERROR - app - Exception on /ports/COM6/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 82, in read_data
+    ser = serial.Serial(prt, baudrate=9600, timeout=0, bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-21 14:58:01,765 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:58:01] "[35m[1mGET /ports/COM6/ HTTP/1.1[0m" 500 -
+2021-12-21 14:58:01,829 - ERROR - app - Exception on /ports/COM6/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 53, in device
+    raw = read_data(device_name)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\fnc.py", line 97, in read_data
+    line.append(rline.decode('utf-8', 'slashescape'))
+LookupError: unknown error handler name 'slashescape'
+2021-12-21 14:58:01,829 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:58:01] "[35m[1mGET /ports/COM6/ HTTP/1.1[0m" 500 -
+2021-12-21 14:58:40,153 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 14:58:40] "GET /ports/COM6/ HTTP/1.1" 200 -
+2021-12-21 15:01:36,188 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 15:01:36] "GET /ports/COM6/ HTTP/1.1" 200 -
+2021-12-21 15:01:57,827 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 15:01:57] "GET /ports/COM6/ HTTP/1.1" 200 -
+2021-12-21 17:44:41,534 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 17:44:41] "GET / HTTP/1.1" 200 -
+2021-12-21 17:44:42,075 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 17:44:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-12-21 17:44:48,712 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 17:44:48] "[33mGET /devices/test1 HTTP/1.1[0m" 404 -
+2021-12-21 17:44:51,846 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 17:44:51] "[32mGET /ports/test1 HTTP/1.1[0m" 308 -
+2021-12-21 17:44:51,854 - INFO - werkzeug - 127.0.0.1 - - [21/Dec/2021 17:44:51] "GET /ports/test1/ HTTP/1.1" 200 -
+2021-12-27 15:23:08,216 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:08] "[33mGET /ip/10.101.32.130 HTTP/1.1[0m" 404 -
+2021-12-27 15:23:08,675 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-12-27 15:23:29,805 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:29] "[33mGET /ip/sdfsd HTTP/1.1[0m" 404 -
+2021-12-27 15:23:47,911 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:47] "[32mGET /sockets/sockets HTTP/1.1[0m" 308 -
+2021-12-27 15:23:47,919 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:47] "GET /sockets/sockets/ HTTP/1.1" 200 -
+2021-12-27 15:23:52,085 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:23:52] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:25:35,227 - ERROR - app - Exception on /sockets/10.101.32.130/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 48, in sockets
+    s.send(MESSAGE)
+TypeError: a bytes-like object is required, not 'str'
+2021-12-27 15:25:35,236 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:25:35] "[35m[1mGET /sockets/10.101.32.130/ HTTP/1.1[0m" 500 -
+2021-12-27 15:25:36,150 - ERROR - app - Exception on /sockets/10.101.32.130/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 48, in sockets
+    s.send(MESSAGE)
+TypeError: a bytes-like object is required, not 'str'
+2021-12-27 15:25:36,152 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:25:36] "[35m[1mGET /sockets/10.101.32.130/ HTTP/1.1[0m" 500 -
+2021-12-27 15:25:39,982 - ERROR - app - Exception on /sockets/10.101.32.130/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\msi\PycharmProjects\tbi_serial_agent\app.py", line 48, in sockets
+    s.send(MESSAGE)
+TypeError: a bytes-like object is required, not 'str'
+2021-12-27 15:25:39,983 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:25:39] "[35m[1mGET /sockets/10.101.32.130/ HTTP/1.1[0m" 500 -
+2021-12-27 15:26:14,757 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:26:14] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:26:42,222 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:26:42] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:26:43,531 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:26:43] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:27:04,550 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:27:04] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:27:32,863 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:27:32] "GET /sockets/10.101.32.130/ HTTP/1.1" 200 -
+2021-12-27 15:29:58,447 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:29:58] "[32mGET /sockets/10.101.32.130:1111 HTTP/1.1[0m" 308 -
+2021-12-27 15:29:58,456 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:29:58] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:17,075 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:17] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:40,311 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:40] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:41,235 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:41] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:41,937 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:41] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:42,135 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:42] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:42,371 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:42] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:30:53,428 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:30:53] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:27,028 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:27] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:31,937 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:31] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:34,407 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:34] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:35,071 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:35] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:35,523 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:35] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:35,995 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:35] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:36,607 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:36] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:37,091 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:37] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:37,807 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:37] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:38,315 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:38] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:38,767 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:38] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:39,207 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:39] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:39,844 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:39] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:40,440 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:40] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:40,707 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:40] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:31:40,907 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:31:40] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:08,360 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:08] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:08,993 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:08] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:19,561 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:19] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:29,470 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:29] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:30,553 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:30] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:51,671 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:51] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:52,447 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:52] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:53,031 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:53] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:53,547 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:53] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:53,707 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:53] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:32:53,974 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:32:53] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:18,669 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:18] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:21,753 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:21] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:30,325 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:30] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:30,858 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:30] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:31,102 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:31] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:31,502 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:31] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:31,693 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:31] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:31,929 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:31] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:32,221 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:32] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:41,309 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:41] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:41,794 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:41] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:33:42,066 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:33:42] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:35:49,029 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:35:49] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:36:30,608 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:36:30] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:36:50,023 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:36:50] "GET /sockets/10.101.32.131:1111/ HTTP/1.1" 200 -
+2021-12-27 15:36:50,465 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:36:50] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:36:52,477 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:36:52] "GET /sockets/10.101.32.130:1111/ HTTP/1.1" 200 -
+2021-12-27 15:36:54,502 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:36:54] "GET /sockets/10.101.32.131:1111/ HTTP/1.1" 200 -
+2021-12-27 15:37:11,499 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 15:37:11] "GET /sockets/10.101.32.131:1111/ HTTP/1.1" 200 -
+2021-12-27 17:11:49,413 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:11:49] "GET / HTTP/1.1" 200 -
+2021-12-27 17:11:55,833 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:11:55] "[32mGET /ports HTTP/1.1[0m" 308 -
+2021-12-27 17:11:56,081 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:11:56] "GET /ports/ HTTP/1.1" 200 -
+2021-12-27 17:12:02,331 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:12:02] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:12:26,429 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:12:26] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:12:30,793 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:12:30] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:12:49,524 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:12:49] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:13:15,716 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:13:15] "GET / HTTP/1.1" 200 -
+2021-12-27 17:13:24,143 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:13:24] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:13:28,442 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:13:28] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:13:37,753 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:13:37] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:14:13,818 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:14:13] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:16:32,845 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:16:32,847 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:16:32] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:16:35,182 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:16:35,184 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:16:35] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:16:43,239 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:16:43,240 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:16:43] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:17:34,516 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:17:34,518 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:17:34] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:17:49,554 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:17:49,555 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:17:49] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:18:03,447 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:18:03,447 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:18:03] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:18:23,863 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:18:23,864 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:18:23] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:18:55,388 - ERROR - app - could not open port 'com4': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2021-12-27 17:18:55,392 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:18:55] "GET /ports/com4/ HTTP/1.1" 200 -
+2021-12-27 17:18:58,793 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:18:58] "GET /ports/ HTTP/1.1" 200 -
+2021-12-27 17:19:13,247 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:19:13] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:19:25,930 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:19:25] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:19:29,068 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:19:29] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:19:51,873 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:19:51] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:20:18,039 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:20:18] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:20:21,485 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:20:21] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:20:43,236 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:20:43] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:22:07,094 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:22:07,097 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:22:07] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:25:49,988 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:25:49,990 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:25:49] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:25:57,297 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:25:57,298 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:25:57] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:26:05,686 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:26:05,688 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:26:05] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:26:24,329 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:26:24,331 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:26:24] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:26:44,619 - ERROR - app - a bytes-like object is required, not 'str'
+2021-12-27 17:26:44,673 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:26:44] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:27:08,622 - ERROR - app - a bytes-like object is required, not 'str'
+2021-12-27 17:27:08,625 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:27:08] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:28:09,047 - ERROR - app - a bytes-like object is required, not 'str'
+2021-12-27 17:28:13,190 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:28:13] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:28:28,279 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:28:28,280 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:28:28] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:28:31,950 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:28:31,951 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:28:31] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:28:36,822 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:28:36,823 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:28:36] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:28:37,872 - ERROR - app - could not open port 'com6': PermissionError(13, 'Eriþim engellendi.', None, 5)
+2021-12-27 17:28:37,873 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:28:37] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:31:10,594 - ERROR - app - 'utf-8' codec can't decode byte 0x80 in position 10: invalid start byte
+2021-12-27 17:31:14,066 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:31:14] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:31:48,814 - ERROR - app - 'utf-8' codec can't decode byte 0x80 in position 11: invalid start byte
+2021-12-27 17:31:48,867 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:31:48] "GET /ports/com6/ HTTP/1.1" 200 -
+2021-12-27 17:34:11,591 - ERROR - app - 'utf-8' codec can't decode byte 0x80 in position 2: invalid start byte
+2021-12-27 17:34:12,748 - INFO - werkzeug - 127.0.0.1 - - [27/Dec/2021 17:34:12] "GET /ports/com6/ HTTP/1.1" 200 -
+2022-01-25 16:03:21,458 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:21] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:03:21,468 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:21] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:03:31,124 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:31] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:03:31,149 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:31] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:03:31,186 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:31] "GET / HTTP/1.1" 200 -
+2022-01-25 16:03:32,849 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:32] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:03:32,883 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:03:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-25 16:05:21,204 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:21] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:21,228 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:21] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:21,276 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:21] "[32mGET /ports HTTP/1.1[0m" 308 -
+2022-01-25 16:05:21,324 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:21] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:21,452 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:21] "GET /ports/ HTTP/1.1" 200 -
+2022-01-25 16:05:25,214 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:25] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:25,246 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:25] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:25,286 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:25] "[32mGET /ports/com3 HTTP/1.1[0m" 308 -
+2022-01-25 16:05:25,334 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:25] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:26,588 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:26] "GET /ports/com3/ HTTP/1.1" 200 -
+2022-01-25 16:05:29,610 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:29] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:29,634 - ERROR - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:29] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:05:30,889 - INFO - werkzeug - 127.0.0.1 - - [25/Jan/2022 16:05:30] "GET /ports/com3/ HTTP/1.1" 200 -
+2022-01-25 16:14:35,893 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:14:35] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:14:35,995 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:14:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-25 16:15:01,171 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:01] "[32mGET /ports HTTP/1.1[0m" 308 -
+2022-01-25 16:15:01,355 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:01] "GET /ports/ HTTP/1.1" 200 -
+2022-01-25 16:15:07,608 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:07] "[32mGET /ports/COM3 HTTP/1.1[0m" 308 -
+2022-01-25 16:15:08,926 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:08] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:28,492 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:28] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:32,141 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:32] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:34,574 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:34] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:38,872 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:38] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:40,835 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:40] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:44,655 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:44] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:48,107 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:48] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:54,178 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:54] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:56,758 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:56] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:15:58,945 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:15:58] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:16:02,385 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:16:02] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:16:05,627 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:16:05] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:16:08,702 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:16:08] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:16:18,074 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:16:18] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:16:25,631 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:16:25] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:17:01,050 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:17:01] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:17:44,769 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:17:44] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:17:44,863 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:17:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-25 16:17:48,407 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:17:48] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:28:08,591 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:28:08] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:28:08,666 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:28:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-25 16:29:35,228 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:29:35] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:29:35,308 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:29:35] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:34,444 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:34] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:34,480 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:34] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:40,576 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:40] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:40,608 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:40] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:41,901 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:41] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:30:43,820 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:43] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:30:43,869 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:30:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-01-25 16:41:57,112 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:41:57] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:41:57,136 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:41:57] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:41:57,184 - ERROR - app - could not open port 'COM3': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2022-01-25 16:41:57,185 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:41:57] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:42:01,302 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:42:01] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:42:01,330 - ERROR - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:42:01] SSL error occurred: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2305)
+2022-01-25 16:42:01,377 - ERROR - app - could not open port 'COM3': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2022-01-25 16:42:01,378 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:42:01] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:43:22,471 - ERROR - app - could not open port 'COM3': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2022-01-25 16:43:22,472 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:43:22] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:43:38,991 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:43:38] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:43:42,298 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:43:42] "GET /ports/COM3/ HTTP/1.1" 200 -
+2022-01-25 16:47:34,324 - INFO - werkzeug - 10.101.32.226 - - [25/Jan/2022 16:47:34] "GET /ports/COM3/ HTTP/1.1" 200 -
+2023-04-28 11:08:32,937 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:08:32] "GET / HTTP/1.1" 200 -
+2023-04-28 11:08:33,429 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:08:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-28 11:08:38,253 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:08:38] "[32mGET /ports HTTP/1.1[0m" 308 -
+2023-04-28 11:08:38,269 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:08:38] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:10:52,888 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:10:52] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:11:03,477 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:03] "[32mGET /ports/COM5 HTTP/1.1[0m" 308 -
+2023-04-28 11:11:04,916 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:04] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:11:12,280 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:12] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:11:15,503 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:15] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:11:28,034 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:28] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:11:37,470 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:37] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:11:42,857 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:42] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:11:46,574 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:11:46] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:12:04,715 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:04] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:12:07,731 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:07] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:12:13,926 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:13] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:12:27,421 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:27] "GET /ports/COM5/ HTTP/1.1" 200 -
+2023-04-28 11:12:55,365 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:55] "GET / HTTP/1.1" 200 -
+2023-04-28 11:12:55,818 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:12:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-28 11:13:01,329 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:01] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:13:32,280 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:32] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:13:32,711 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:32] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:13:55,390 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:55] "GET /ports/ HTTP/1.1" 200 -
+2023-04-28 11:13:55,699 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-28 11:13:59,775 - INFO - werkzeug - 127.0.0.1 - - [28/Apr/2023 11:13:59] "GET /ports/ HTTP/1.1" 200 -
+2023-11-20 10:34:14,729 - INFO - werkzeug - 127.0.0.1 - - [20/Nov/2023 10:34:14] "GET / HTTP/1.1" 200 -
+2023-11-20 10:34:14,767 - INFO - werkzeug - 127.0.0.1 - - [20/Nov/2023 10:34:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-20 10:34:26,306 - INFO - werkzeug - 127.0.0.1 - - [20/Nov/2023 10:34:26] "[32mGET /ports HTTP/1.1[0m" 308 -
+2023-11-20 10:34:26,330 - INFO - werkzeug - 127.0.0.1 - - [20/Nov/2023 10:34:26] "GET /ports/ HTTP/1.1" 200 -
+2023-11-20 10:34:34,687 - ERROR - app - could not open port 'COM2': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2023-11-20 10:34:34,689 - INFO - werkzeug - 127.0.0.1 - - [20/Nov/2023 10:34:34] "GET /ports/COM2/ HTTP/1.1" 200 -
+2024-01-18 15:16:54,389 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:16:54] "GET / HTTP/1.1" 200 -
+2024-01-18 15:16:54,416 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:16:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-01-18 15:17:03,242 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:17:03] "[32mGET /ports/TEST HTTP/1.1[0m" 308 -
+2024-01-18 15:17:03,253 - ERROR - app - could not open port 'TEST': FileNotFoundError(2, 'Sistem belirtilen dosyayý bulamýyor.', None, 2)
+2024-01-18 15:17:03,255 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:17:03] "GET /ports/TEST/ HTTP/1.1" 200 -
+2024-01-18 15:17:10,682 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:17:10] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:24,060 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:24] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:44,738 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:44] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:45,890 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:45] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:46,345 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:46] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:46,537 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:46] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:19:59,259 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:19:59] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:20:49,888 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:20:49] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:20:51,194 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:20:51] "GET /ports/test1/ HTTP/1.1" 200 -
+2024-01-18 15:20:52,706 - INFO - werkzeug - 127.0.0.1 - - [18/Jan/2024 15:20:52] "GET /ports/test1/ HTTP/1.1" 200 -

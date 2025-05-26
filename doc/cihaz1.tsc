@@ -1,0 +1,29 @@
+1: script
+cihaz1.tsc
+
+SET COM = COM4
+IF HAS A
+
+REMOVE(A)
+
+REMOVE(SPACE)
+
+SELECTLAST(LINEBREAK, A)
+
+2:
+settings.conf
+CharsToRemove: A; ;
+CharsNeeded: A
+comName = COM4
+
+
+
+
+A     0
+A   10
+A 100
+
+
+/NETA
+
+/SAHİN

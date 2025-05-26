@@ -1,0 +1,8 @@
+tmp = json.dumps(fetch_data_asdict())
+
+@api.route('/t/')
+def t():
+    tmp = json.dumps(fetch_grouped_data_asdict(), use_decimal=True)
+    s = zlib.compress(tmp.encode('utf8'))
+    s = base64.standard_b64encode(s)
+    return s

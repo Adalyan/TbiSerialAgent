@@ -1,0 +1,2 @@
+.\dist.bat komutuyla proje derlenir
+sonra script klasöründeki inno script çalıştırılarak istenirse setup oluşturulur

@@ -1,0 +1,19 @@
+device COM1 start
+crop_line 0
+split_line 0
+device COM1 end
+
+device COM2 start
+crop_line 0
+split_line 0
+device COM2 end
+
+device COM3 start
+crop_line 0
+split_line 0
+device COM3 end
+
+device COM4 start
+crop_line 0
+split_line 0
+device COM4 end
